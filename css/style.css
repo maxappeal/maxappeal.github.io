@@ -113,12 +113,15 @@ textarea {
   }
 
   .contact {
-  width: 30%;
-}
+    width: 30%;
+  }
 
-.socialize {
-  width: 20%;
-}
-  
+  .socialize {
+    width: 20%;
+  }
+
+  hr.mobile {
+    display: none;
+  }  
 }
 
