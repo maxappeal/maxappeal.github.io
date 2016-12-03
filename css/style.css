@@ -81,19 +81,24 @@ section div {
   min-width: 30%;
 }
 
-.contact {
-  width: 30%;
-}
 
-.socialize {
-  width: 20%;
-}
 
 input {
   display: block;
-  margin:1em auto;
+  line-height: 2em;
+  margin: 1em auto;
+  
 }
 
+input.submit {
+  cursor: pointer;
+  
+}
+
+textarea {
+  margin: auto;
+  display: block;
+}
 
 @media screen and (min-width:800px) {
     .flex .p {
@@ -107,7 +112,13 @@ input {
     border: 1px solid black;
   }
 
+  .contact {
+  width: 30%;
+}
 
+.socialize {
+  width: 20%;
+}
   
 }
 
