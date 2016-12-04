@@ -91,6 +91,11 @@ textarea {
     padding: 5px
 }
 
+.status {
+    text-align: center;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 800px) {
     a,
     h1 a:hover {

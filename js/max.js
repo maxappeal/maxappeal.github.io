@@ -34,3 +34,7 @@ if (document.forms[0] && window.FormData) {
         }
     });
 }
+
+var today = new Date();
+var year = today.getFullYear();
+
