@@ -1,127 +1,124 @@
-/*
-Theme Name: max-appeal portfolio
-Theme URI: http://www.max-appeal.com
-Description: Portfolio Design
-Version: 3.0
-Author: Maximilian Apel
-Author URI: http://www.max-appeal.de
-License: GPL
-*/
-
-
-/* Font Classes */
-
-.leagueGothic {
-  font-family: 'LeagueGothicRegular';
-  font-weight: 500;
-  font-style: normal;
-}
-
 /* Base Styles */
 
 * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html {
-  font-family: 'Muli', sans-serif;
-  font-size: 16px;
-  color: #323232;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    color: #323232;
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
 }
 
 h1 {
-  font-size: 3em;
+    font-size: 3em;
 }
 
 h1,
 h2,
 footer,
 ul,
-.impress p {
-  text-align: center;
+.impress p,
+.intro {
+    text-align: center;
+}
+
+.intro {
+    margin: 3% auto;
 }
 
 hr {
     margin: 2% 10%;
-  }
+}
 
 footer {
-  margin: 2% 0
+    margin: 2% 0
 }
 
 ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 a,
 h1 a:hover {
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: underline;
+}
+
+h1 a {
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 section div {
-  margin: auto 10%;
+    margin: auto 10%;
 }
 
 .soundcloud {
-  min-width: 30%;
+    min-width: 30%;
 }
 
-
-
 input {
-  display: block;
-  line-height: 2em;
-  margin: 1em auto;
-  
+    display: block;
+    margin: 1em auto;
+    border: 1px solid black;
+    padding: 5px;
+    line-height: 2em;
 }
 
 input.submit {
-  cursor: pointer;
-  
+    padding: 5px 20px;
+    cursor: pointer;
 }
 
 textarea {
-  margin: auto;
-  display: block;
-}
-
-@media screen and (min-width:800px) {
-    .flex .p {
-      float: left
-    }
-    section {
-    display: flex;
-  }
-  section div.border {
-    margin: 0;
+    display: block;
+    margin: auto;
     border: 1px solid black;
-  }
-
-  .contact {
-    width: 30%;
-  }
-
-  .socialize {
-    width: 20%;
-  }
-
-  hr.mobile {
-    display: none;
-  }  
+    padding: 5px
 }
 
+@media screen and (min-width: 800px) {
+    a,
+    h1 a:hover {
+        text-decoration: none;
+    }
+
+    .flex .p {
+        float: left
+    }
+
+    section {
+        display: flex;
+    }
+
+    section div.border {
+        margin: 0;
+        border: 1px solid black;
+    }
+
+    .contact {
+        width: 30%;
+    }
+
+    .socialize {
+        width: 20%;
+    }
+
+    hr.mobile {
+        display: none;
+    }
+}
