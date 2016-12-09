@@ -72,13 +72,9 @@ section div {
     margin: 0 10%;
 }
 
-.soundcloud {
-    min-width: 30%;
-}
-
 input {
     display: block;
-    width: 11em;
+    width: 16em;
     margin: 1em auto;
     border: 1px solid black;
     padding: 5px;
@@ -87,18 +83,21 @@ input {
 }
 
 input.submit {
-    width: 11.7em;
+    width: 8em;
+    background: black;
+    opacity: .8;
+    color: white;
     cursor: pointer;
 }
 
 input.submit:hover {
-    background: black;
-    color: white;
+    opacity: 1;
 }
 
 textarea {
     display: block;
-    width: 11em;
+    width: 16em;
+    height: 6em;
     margin: auto;
     border: 1px solid black;
     padding: 5px;
@@ -110,7 +109,8 @@ textarea {
     font-weight: bold;
 }
 
-.about li {
+.about li,
+.socialize li {
     margin: 3% auto;
 }
 
@@ -120,15 +120,11 @@ textarea {
         text-decoration: none;
     }
 
-    .flex .p {
-        float: left
-    }
-
     section {
         display: flex;
     }
 
-    section div:not(.border) {
+    section div:not(.border):not(.status) {
         width: 50%;
     }
 
@@ -136,7 +132,6 @@ textarea {
         margin: 0;
         border: 1px solid black;
     }
-
 
     hr.mobile {
         display: none;
