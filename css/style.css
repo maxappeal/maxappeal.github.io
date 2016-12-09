@@ -69,7 +69,7 @@ a:hover {
 }
 
 section div {
-    margin: auto 10%;
+    margin: 0 10%;
 }
 
 .soundcloud {
@@ -78,22 +78,31 @@ section div {
 
 input {
     display: block;
+    width: 11em;
     margin: 1em auto;
     border: 1px solid black;
     padding: 5px;
     line-height: 2em;
+    font-size: .7em;
 }
 
 input.submit {
-    padding: 5px 20px;
+    width: 11.7em;
     cursor: pointer;
+}
+
+input.submit:hover {
+    background: black;
+    color: white;
 }
 
 textarea {
     display: block;
+    width: 11em;
     margin: auto;
     border: 1px solid black;
-    padding: 5px
+    padding: 5px;
+    font-size: .7em;
 }
 
 .status {
@@ -119,18 +128,15 @@ textarea {
         display: flex;
     }
 
+    section div:not(.border) {
+        width: 50%;
+    }
+
     section div.border {
         margin: 0;
         border: 1px solid black;
     }
 
-    .contact {
-        width: 30%;
-    }
-
-    .socialize {
-        width: 20%;
-    }
 
     hr.mobile {
         display: none;
