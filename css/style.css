@@ -24,11 +24,17 @@ h1 {
 
 h1,
 h2,
+h3,
 footer,
 ul,
 .impress p,
 .intro {
     text-align: center;
+}
+
+h3 {
+    font-style: italic;
+    text-decoration: underline;
 }
 
 .intro {
@@ -93,6 +99,10 @@ textarea {
 .status {
     text-align: center;
     font-weight: bold;
+}
+
+.about li {
+    margin: 3% auto;
 }
 
 @media screen and (min-width: 800px) {
