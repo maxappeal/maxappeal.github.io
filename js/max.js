@@ -20,20 +20,24 @@ if (document.forms[0] && window.FormData) {
         evt.preventDefault();
         form.appendChild(statusMessage);
         submitButton.disabled = true;
-        submitButton.style.display = 'none';
 
         var formData = new FormData(form);
 
         request.send(formData);
 
         request.onreadystatechange = function () {
-            if (request.readyState < 4)
+            if (request.readyState < 4) {
                 statusMessage.innerHTML = message.loading;
+            }
             else if (request.readyState === 4) {
-                if (request.status == 200 && request.status < 300)
+                if (request.status == 200 && request.status < 300) {
+                    submitButton.style.display = 'none';
                     statusMessage.innerHTML = message.success;
-                else
+                }
+                else {
                     form.insertAdjacentHTML('beforeend', message.failure);
+                    submitButton.disabled = false;
+                }
             }
         }
     });
