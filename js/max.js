@@ -7,6 +7,8 @@ if (document.forms[0] && window.FormData) {
 
     var form = document.forms[0];
 
+    var submitButton = document.getElementById('formSubmit');
+
     var statusMessage = document.createElement('div');
     statusMessage.className = 'status';
 
@@ -17,6 +19,8 @@ if (document.forms[0] && window.FormData) {
     form.addEventListener('submit', function (evt) {
         evt.preventDefault();
         form.appendChild(statusMessage);
+        submitButton.disabled = true;
+        submitButton.style.display = 'none';
 
         var formData = new FormData(form);
 
