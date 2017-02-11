@@ -2,7 +2,7 @@ if (document.forms[0] && window.FormData) {
 
     var message = new Object();
     message.loading = 'Loading...';
-    message.success = 'Thank you. Application received!';
+    message.success = 'Thank you. Message received!';
     message.failure = 'Whoops! There was a problem sending your message.';
 
     var form = document.forms[0];
@@ -45,4 +45,4 @@ if (document.forms[0] && window.FormData) {
 
 var today = new Date();
 var year = today.getFullYear();
-
+document.getElementById('jsDate').innerHTML = year.toString();

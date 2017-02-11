@@ -115,6 +115,12 @@ textarea {
     margin: 3% auto;
 }
 
+.copyright {
+    margin: 1em 0 0.5em 0;
+    font-size: 0.5em;
+    font-style: italic;
+}
+
 @media screen and (min-width: 800px) {
     a,
     h1 a:hover {
