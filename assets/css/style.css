@@ -8,23 +8,8 @@ h2,
 h3,
 footer,
 ul,
-.impress p,
-.intro {
+.impress p {
     text-align: center;
-}
-
-h3 {
-    font-style: italic;
-    text-decoration: underline;
-}
-
-.intro {
-    margin: 3% auto;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
 }
 
 a,
